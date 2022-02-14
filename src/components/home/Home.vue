@@ -1,15 +1,17 @@
 <template>
-  <div id="app">
-    hello 
+  <div>
+    hello world
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'App'
+  name: 'Home'
 }
+
 </script>
 
-<style>
+<style scoped>
 
 </style>
