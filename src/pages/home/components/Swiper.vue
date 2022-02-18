@@ -19,6 +19,7 @@
     data() {
       return {
         swiperOptions: {
+          // 不同版本的小圆点写法不同
           pagination:".swiper-pagination",
           loop: true,
           paginationClickable: true,
