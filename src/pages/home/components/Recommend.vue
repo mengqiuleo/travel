@@ -3,7 +3,7 @@
     <div class="title">热销推荐</div>
     <ul>
       <li class="item border-bottom"
-      v-for="item of recommendList" :key="item.id">
+      v-for="item of list" :key="item.id">
           <img class="item-img" :src="item.imgUrl" alt="">
 
         <div class="item-info">
@@ -19,25 +19,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data() {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/vs_ceph_vs_tts/0a0cef49-07cd-4835-ba2b-763026f116e0.jpg_r_390x260x95_19e75b6a.jpg',
-        title: '大连圣亚海洋世界',
-        desc: '晚清时期的中国金融中心'
-      },{
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1505/f0/f04df22f36d4dc25.water.jpg_710x360_48a463e0.jpg',
-        title: '大连圣亚海洋世界',
-        desc: '晚清时期的中国金融中心'
-      },{
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/vs_ceph_vs_tts/0a0cef49-07cd-4835-ba2b-763026f116e0.jpg_r_390x260x95_19e75b6a.jpg',
-        title: '大连圣亚海洋世界',
-        desc: '晚清时期的中国金融中心'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
