@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper">
-  <swiper :options="swiperOptions" v-if="list.length">
+  <swiper :options="swiperOptions" v-if="this.list.length">
     <swiper-slide v-for="item of list" :key="item.id">
       <img class="swiper-img" :src="item.imgUrl">
     </swiper-slide>
@@ -25,9 +25,7 @@
           // 不同版本的小圆点写法不同
           pagination:".swiper-pagination",
           loop: true,
-          paginationClickable: true,
-          speed:2000,
-          autoplay:2000,
+          autoplay: 2000
         }
       }
     }
