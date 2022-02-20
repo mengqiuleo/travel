@@ -30,12 +30,13 @@ export default {
     }
   },
   props: {
-    imgs: {
-      type: Array,
-      default() {
-        return []
-      }
-    }
+    // imgs: {
+    //   type: Array,
+    //   default() {
+    //     return []
+    //   }
+    // }
+    imgs: Array
   },
   methods: {
     handleGallaryClick() {
